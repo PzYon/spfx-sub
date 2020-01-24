@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "skipLibCheck": true,
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["dom", "es2015", "es5", "es6"],
+    "outDir": "./dist"
+  },
+  "exclude": ["node_modules", "dist"]
+}
