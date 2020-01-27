@@ -18,9 +18,8 @@ module.exports = env => {
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "index.js",
-      libraryTarget: "var",
-      libraryExport: "default",
-      library: "bootstrapCore"
+      libraryTarget: "umd",
+      libraryExport: "default"
     },
     optimization: {
       minimize: minimize

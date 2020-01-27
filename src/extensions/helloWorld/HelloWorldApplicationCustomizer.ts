@@ -5,6 +5,8 @@ import {
   PlaceholderContent
 } from "@microsoft/sp-application-base";
 
+import * as bootstrapCore from "core";
+
 export default class HelloWorldApplicationCustomizer extends BaseApplicationCustomizer<{}> {
   private _placeholder: PlaceholderContent | undefined;
 
@@ -19,7 +21,6 @@ export default class HelloWorldApplicationCustomizer extends BaseApplicationCust
         }
 
         if (this._placeholder && this._placeholder.domElement) {
-          const bootstrapCore = window["bootstrapCore"];
           if (!bootstrapCore) {
             throw new Error("bootstrapCore is not loaded!");
           }
