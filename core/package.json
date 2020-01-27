@@ -8,6 +8,8 @@
     "build": "webpack --env.prod=true"
   },
   "dependencies": {
+    "@microsoft/sp-application-base": "1.4.1",
+    "@microsoft/sp-core-library": "1.4.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "styled-components": "5.0.0",

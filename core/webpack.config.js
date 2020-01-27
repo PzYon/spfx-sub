@@ -1,5 +1,14 @@
 const path = require("path");
 
+//https://github.com/SharePoint/sp-dev-docs/issues/2661#issuecomment-426995070
+const externals = [
+  "@microsoft/sp-core-library",
+  "@microsoft/sp-loader",
+  "@microsoft/sp-webpart-base",
+  "@microsoft/sp-page-context",
+  "@microsoft/sp-http"
+];
+
 module.exports = env => {
   if (!env) {
     env = {};
@@ -11,6 +20,7 @@ module.exports = env => {
   const mode = isProd ? "production" : "development";
 
   return {
+    externals: externals,
     target: "web",
     mode: mode,
     watch: watch,
