@@ -19,8 +19,8 @@
     "@microsoft/sp-dialog": "~1.4.0",
     "@types/es6-promise": "0.0.33",
     "@types/webpack-env": "1.13.1",
-    "core": "file:./core/dist",
-    "prettier": "^1.19.1"
+    "core": "file:./core",
+    "prettier": "1.19.1"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "~1.4.1",
